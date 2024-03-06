@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+  /* background-color: rgb(44, 42, 42); */
+}
+
+.main {
+  background-color: rgb(34, 160, 228);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: red solid 3px; */
+}
+.form_part {
+  /* border: red solid 3px; */
+  background-color: rgb(6, 102, 166);
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.username,
+.Password,
+.Login {
+  height: 2.5rem;
+  width: 17rem;
+  padding-left: 10px;
+  background-color: rgb(202, 243, 227);
+  border-radius: 5px;
+  border: none;
+  color: rgb(133, 30, 173);
+}
+.span {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+.username::placeholder,
+.Password::placeholder {
+  color: rgb(174, 131, 169);
+}
+.Login {
+  background-color: rgb(3, 224, 10);
+  font-size: 20px;
+  color: black;
+}
+h1 {
+  color: rgb(3, 224, 10);
+}
+.Login:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+.Signup:hover,
+.Forgot_Password:hover {
+  color: rgb(3, 224, 10);
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+.form_part:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.p {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 15px;
+  padding: 5rem;
+}
+.videos {
+  height: 15rem;
+  width: 25rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
+}
+.video {
+  height: 15rem;
+  width: 25rem;
+  border-radius: 10px;
+}
+.video:hover {
+  animation-name: hoverAutoplay;
+  animation-duration: 10s;
+  animation-play-state: running;
+}
+@keyframes hoverAutoplay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
